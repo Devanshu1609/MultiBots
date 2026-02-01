@@ -63,6 +63,7 @@ def initialize_jira_components():
     jira_wrapper = JiraAPIWrapper()
     toolkit = JiraToolkit.from_jira_api_wrapper(jira_wrapper)
     tools = toolkit.get_tools()
+    print(tools)
     
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.5-flash-lite",
