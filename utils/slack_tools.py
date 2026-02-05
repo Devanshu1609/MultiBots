@@ -1,8 +1,12 @@
-from langchain_core.tools import Tool
-from slack_sdk import WebClient
-import os
+# # utils/slack_tools.py
 
-slack_token = os.getenv("SLACK_BOT_TOKEN")
+import os
+from slack_sdk import WebClient
+from dotenv import load_dotenv
+
+load_dotenv()
+
+slack_token = os.getenv("SLACK_TOKEN")
 slack_client = WebClient(token=slack_token)
 
 def get_channel_info(channel_name: str) -> str:
@@ -16,4 +20,4 @@ def get_channel_info(channel_name: str) -> str:
         return f"Channel '{channel_name}' not found."
     except Exception as e:
         return f"Error: {e}"
-
+    
