@@ -1,4 +1,4 @@
-# Community Chatbot for Mifos Projects
+# MultiAgentBots
 
 An advanced, extensible chatbot platform designed for seamless integration with Jira, Slack, and GitHub. It leverages LangChain , Google-Gemini and Agno to provide intelligent, conversational automation and agent-based workflows. The platform features is easily customizable for a variety of community and project management
  
